@@ -1,0 +1,96 @@
+@import "../../responsive.scss";
+
+// src/AboutUs.scss
+.about-us {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  padding-bottom: 40px; // Added padding to the bottom to ensure scrolling space
+
+  .hero {
+    background: url('https://img.freepik.com/free-photo/top-view-statistics-presentation-with-arrow_23-2149023752.jpg?size=626&ext=jpg&ga=GA1.1.2082370165.1716681600&semt=ais_user') center/cover no-repeat;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #333;
+    text-align: center;
+
+    .overlay {
+      background: #fcf5f36e;
+      padding: 20px;
+      border-radius: 10px;
+
+      h1 {
+        font-size: 3em;
+        margin-bottom: 0.5em;
+      }
+
+      p {
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  section {
+    padding: 40px 20px;
+
+    h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      text-align: center;
+      position: relative;
+
+      &::after {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 4px;
+        background: #f8b400;
+        margin: 10px auto 0;
+        border-radius: 2px;
+      }
+    }
+
+    p {
+      font-size: 1.2em;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+
+  .team {
+    background: #f9f9f9;
+
+    .team-members {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .team-member {
+        margin: 20px;
+        text-align: center;
+        max-width: 200px;
+
+        img {
+          width: 100%;
+          border-radius: 50%;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          margin-bottom: 10px;
+        }
+
+        h3 {
+          font-size: 1.5em;
+          margin-bottom: 5px;
+        }
+
+        p {
+          font-size: 1.1em;
+          color: #777;
+        }
+      }
+    }
+  }
+}
